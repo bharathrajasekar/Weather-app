@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1 class="head">Weather Manager</h1>
+    <input type="text" id="city-input" placeholder="Enter City Name" />
+    
+    <div class="unit-toggle">
+      <label><input type="radio" name="unit" value="metric" checked /> Celsius</label>
+      <label><input type="radio" name="unit" value="imperial" /> Fahrenheit</label>
+    </div>
+
+    <button onclick="searchCity()">Search</button>
+
+    <div class="result">
+      <h2 id="city-name">--</h2>
+      <h3 id="weather-type">--</h3>
+      <p><strong>Temperature:</strong> <span id="temp">--</span>°</p>
+      <p><strong>Feels Like:</strong> <span id="feels-like">--</span>°</p>
+      <p><strong>Min Temp:</strong> <span id="min-temp">--</span>°</p>
+      <p><strong>Max Temp:</strong> <span id="max-temp">--</span>°</p>
+      <p><strong>Humidity:</strong> <span id="humidity">--</span>%</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
